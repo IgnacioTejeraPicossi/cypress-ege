@@ -2,7 +2,9 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:8080/admin/site/preview/starter/draft/ege/',// Angi URL for lokal installasjon
+    baseUrl: 'http://www.ege.no',// Angi URL for lokal installasjon
+    //baseUrl: 'www.ege.no',// Gamle URL for in.yngve ege
+   
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
@@ -13,6 +15,6 @@ module.exports = defineConfig({
     overwrite: false,
     html: true,
     json: false,
-  },
+  }
 
 });
