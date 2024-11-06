@@ -1,18 +1,34 @@
 describe('Hjemmeside tester', () => {
       it('Test under menu Produkter', () => {
         cy.visit('/produkter');
-        cy.contains('Produkter').should('be.visible');
-        cy.contains('Meny').should('be.visible'); 
+        cy.contains('Industrielle verktøy og maskiner').should('be.visible');
+
+        cy.contains('Maskiner').should('be.visible');
         cy.contains('Skjærende verktøy').should('be.visible'); 
+        cy.contains('Holdende verktøy').should('be.visible');
+        cy.contains('Prosesskontroll').should('be.visible'); 
+        cy.contains('Oppspenning').should('be.visible');
+        cy.contains('Måleverktøy').should('be.visible');
+        cy.contains('Innredning').should('be.visible');
+        
+        
+        /* ==== Test sub meny opsjoner ==== */
+
+        cy.visit('/produkter/skjaerende-verktoy');
+        cy.contains('Skjæerende verktøy').should('be.visible'); 
+
+        cy.visit('/produkter/holdende-verktoy');
         cy.contains('Holdende verktøy').should('be.visible'); 
-        cy.contains('Oppspenningsverktøy').should('be.visible'); 
-        cy.contains('Måleverktøy').should('be.visible'); 
-        cy.contains('Kjølevæsker').should('be.visible'); 
-        cy.contains('Smøremidler').should('be.visible'); 
-        cy.contains('Innredninger').should('be.visible'); 
-        cy.contains('Merkemaskiner & utstyr').should('be.visible'); 
-        cy.contains('Målemaskiner & utstyr').should('be.visible'); 
-        cy.contains('Vedlikehold skjærevæsker').should('be.visible'); 
+        
+        cy.visit('/prosesskontroll');
+        cy.contains('Prosesskontroll').should('be.visible'); 
+
+        cy.visit('/produkter/oppspenning');
+        cy.contains('Oppspenning').should('be.visible');
+                
+        cy.visit('/produkter/maleverktoy');
+        cy.contains('Måleverktøy').should('be.visible');
+       
 
         /* ==== Test sub meny opsjoner ==== */
         //cy.visit('/');

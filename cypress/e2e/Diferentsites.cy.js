@@ -5,14 +5,14 @@ describe('Test forskjellige Hjemmesider', () => {
       cy.visit('/');  // Dette tilsvarer å besøke 'http://www.ege.no'
       //cy.visit('http://localhost:8080/admin/site/preview/starter/draft/ege/');
 
-      cy.get('img[src*="logo--ing-yngve-ege.png"]').should('be.visible');
+      cy.get('img[src*="logo--ing-yngve-ege.png"]').should('be.visible');// Sjekk at logo  er synlig
       //<img src="/ege/_/image/83fdada6-c1a0-4219-bba8-74a84ec082f7:660b5d05863cbbc1322930afeb61423b524a0f8c/height-40/logo--ing-yngve-ege.png" alt="Gå til forside"></img>
       cy.contains('Din lokale leverandør').should('be.visible');  // Sjekk at teksten "Din lokale leverandør" er synlig
 
       cy.visit('http://localhost:8080/site/ege/master/ege'); //ege
       cy.contains('Din lokale leverandør').should('be.visible');  // Sjekk at teksten er synlig
 
-      // //mangler installasjon ved localhost:8080 og mangler riktig png.
+      //mangler installasjon ved localhost:8080 og mangler riktig png.
       //cy.visit('http://localhost:8080/site/ege/master/nor-swiss'); //nor-swiss
       //cy.get('img[src*="logo--nor-swiss.png"]').should('be.visible');
       
