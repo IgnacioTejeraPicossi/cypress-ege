@@ -11,7 +11,10 @@ describe('Hjemmeside tester', () => {
         cy.contains('Måleverktøy').should('be.visible');
         cy.contains('Innredning').should('be.visible');
         
-        
+        /* ==== Test sub meny opsjoner ==== */
+        cy.visit('http://localhost:8080/site/ege/master/ege');
+        cy.contains('Våre ansatte').should('be.visible');
+
         /* ==== Test sub meny opsjoner ==== */
 
         cy.visit('/produkter/skjaerende-verktoy');
@@ -30,7 +33,9 @@ describe('Hjemmeside tester', () => {
         cy.contains('Måleverktøy').should('be.visible');
        
 
-        /* ==== Test sub meny opsjoner ==== */
+        
+       
+        
         //cy.visit('/');
         //cy.visit('http://localhost:8080/admin/site/preview/default/draft/eng/Fisheries');
         //cy.get('[class="btn-nav__title"]').eq(0).click();
