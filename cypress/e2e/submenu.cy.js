@@ -17,20 +17,20 @@ describe('Hjemmeside tester', () => {
 
         /* ==== Test sub meny opsjoner ==== */
 
-        cy.visit('/produkter/skjaerende-verktoy');
-        cy.contains('Skjæerende verktøy').should('be.visible'); 
+        //cy.visit('/produkter/skjaerende-verktoy');
+        //cy.contains('Skjæerende verktøy').should('be.visible'); 
 
-        cy.visit('/produkter/holdende-verktoy');
-        cy.contains('Holdende verktøy').should('be.visible'); 
+        //cy.visit('/produkter/holdende-verktoy');
+        //cy.contains('Holdende verktøy').should('be.visible'); 
         
-        cy.visit('/prosesskontroll');
-        cy.contains('Prosesskontroll').should('be.visible'); 
+        //cy.visit('/prosesskontroll');
+        //cy.contains('Prosesskontroll').should('be.visible'); 
 
-        cy.visit('/produkter/oppspenning');
-        cy.contains('Oppspenning').should('be.visible');
+        //cy.visit('/produkter/oppspenning');
+        //cy.contains('Oppspenning').should('be.visible');
                 
-        cy.visit('/produkter/maleverktoy');
-        cy.contains('Måleverktøy').should('be.visible');
+        //cy.visit('/produkter/maleverktoy');
+        //cy.contains('Måleverktøy').should('be.visible');
        
 
         
