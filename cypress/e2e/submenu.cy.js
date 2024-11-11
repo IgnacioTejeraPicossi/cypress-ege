@@ -10,11 +10,49 @@ describe('Hjemmeside tester', () => {
         cy.contains('Oppspenning').should('be.visible');
         cy.contains('Måleverktøy').should('be.visible');
         cy.contains('Innredning').should('be.visible');
+
+
+
         
+
         /* ==== Test sub meny opsjoner ==== */
         cy.visit('http://localhost:8080/site/ege/master/ege');
         cy.contains('Våre ansatte').should('be.visible');
 
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/skjaerende-verktoy');
+        cy.contains('Skjærende verktøy').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/holdende-verktoy');
+        cy.contains('Holdende verktøy').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/prosesskontroll');
+        cy.contains('Prosesskontroll').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/oppspenning');
+        cy.contains('Oppspenning').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/maskiner');
+        cy.contains('Maskiner').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/innredning');
+        cy.contains('Innredning').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/maleverktoy');
+        cy.contains('Måleverktøy').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/produkter/vaesker-og-smoremidler');
+        cy.contains('Væsker og smøremidler').should('be.visible');
+
+
+
+        //div[normalize-space()='Skjærende verktøy']
         /* ==== Test sub meny opsjoner ==== */
 
         //cy.visit('/produkter/skjaerende-verktoy');
