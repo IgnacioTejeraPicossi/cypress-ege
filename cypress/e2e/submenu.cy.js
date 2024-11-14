@@ -52,6 +52,65 @@ describe('Hjemmeside tester', () => {
 
 
 
+        /* ==== Test sub meny Våre leverandærer ==== */
+        cy.visit('http://localhost:8080/site/ege/master/ege');
+        cy.contains('Våre ansatte').should('be.visible');
+
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/amf');
+        cy.contains('AMF').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/bowers');
+        cy.contains('Bowers').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/cimcool');
+        cy.contains('Cimcool').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/few');
+        cy.contains('Few').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/fosen-tools');
+        cy.contains('Fosen tools').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/guhring');
+        cy.contains('Gühring').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/hwr');
+        cy.contains('HWR').should('be.visible');
+
+       
+       // cy.visit('/');
+        // cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/karnasch');
+       //  cy.contains('Karnasch').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/kemmler');
+        cy.contains('Kemmler').should('be.visible');
+
+        //cy.visit('/');
+        //cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/kraeplin');
+        //cy.contains('Kraeplin').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/lista');
+        cy.contains('Lista').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/lomas');
+        cy.contains('Lomas').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/mitutoyo');
+        cy.contains('Mitutoyo').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/renishaw');
+        cy.contains('Renishaw').should('be.visible');
         //div[normalize-space()='Skjærende verktøy']
         /* ==== Test sub meny opsjoner ==== */
 
