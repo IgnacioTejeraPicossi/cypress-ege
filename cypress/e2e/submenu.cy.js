@@ -111,6 +111,45 @@ describe('Hjemmeside tester', () => {
         cy.visit('/');
         cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/renishaw');
         cy.contains('Renishaw').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/rocol');
+        cy.contains('Rocol').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/rohm');
+        cy.contains('Røhm').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/sic');
+        cy.contains('SIC').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/steinmeyer');
+        cy.contains('Steinmeyer').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/sylvac');
+        cy.contains('Sylvac').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/thame-workholding');
+        cy.contains('Thame Workholding').should('be.visible');
+
+        //cy.visit('/');
+        //cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/trimos');
+        //cy.contains('Trimos').should('be.visible');
+
+        cy.visit('/');
+        cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/walter');
+        cy.contains('Walter').should('be.visible');
+
+        //cy.visit('/');
+        //cy.visit('http://localhost:8080/site/ege/master/ege/leverandorer/wyler');
+        //cy.contains('Wyler').should('be.visible');
+
+
+
         //div[normalize-space()='Skjærende verktøy']
         /* ==== Test sub meny opsjoner ==== */
 
