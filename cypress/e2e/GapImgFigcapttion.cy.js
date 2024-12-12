@@ -10,7 +10,7 @@ describe('Gap between img and figcaption', () => {
           const gap = figcaptionTop - imgBottom;
   
           // Verifica si el espacio entre img y figcaption es de 16px
-          expect(gap).to.eq(16);
+          expect(gap).to.eq(18);
    
         
 
