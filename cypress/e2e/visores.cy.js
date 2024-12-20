@@ -23,13 +23,13 @@ describe('Responsivitetstester', () => {
       cy.get('nav').should('be.visible');
     });
     
-    it('Test på iPad', () => {
+    it('Test på iPad-2', () => {
       cy.viewport('ipad-2'); 
       cy.visit('/');
       cy.get('nav').should('be.visible');
     });
 
-    it('Test på iPad', () => {
+    it('Test på iPad-mini', () => {
       cy.viewport('ipad-mini');
       cy.visit('/');
       cy.get('nav').should('be.visible');
