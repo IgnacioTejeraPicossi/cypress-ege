@@ -58,5 +58,115 @@ describe('Responsivitetstester', () => {
       cy.visit('/');
       cy.get('nav').should('be.visible');
   });
+  // Dispositivos adicionales
+
+  it('Test en iPhone SE', () => {
+
+    cy.viewport('iphone-se2'); // iPhone SE de segunda generación
+
+    cy.visit('/');
+
+    cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en iPhone 12 Pro Max', () => {
+
+        cy.viewport(1284, 2778); // Resolución de iPhone 12 Pro Max
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en Samsung Galaxy Fold', () => {
+
+        cy.viewport(1536, 2152); // Resolución desplegado para Galaxy Fold
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en Microsoft Lumia 950', () => {
+
+        cy.viewport(1440, 2560); // Resolución para Lumia 950
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en MacBook Pro 13 pulgadas', () => {
+
+        cy.viewport('macbook-13');
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en MacBook Pro 15 pulgadas', () => {
+
+        cy.viewport('macbook-15');
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en monitor 4K (3840x2160)', () => {
+
+        cy.viewport(3840, 2160); // Resolución 4K
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en monitor ultrawide (3440x1440)', () => {
+
+        cy.viewport(3440, 1440); // Resolución ultrawide
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en resolución móvil pequeña (320x568)', () => {
+
+        cy.viewport(320, 568); // Resolución para dispositivos muy pequeños
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
+
+
+    it('Test en iPad Pro', () => {
+
+        cy.viewport('ipad-pro');
+
+        cy.visit('/');
+
+        cy.get('nav').should('be.visible');
+
+    });
 
   });
