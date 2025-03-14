@@ -11,7 +11,17 @@ describe('Hjemmeside tester', () => {
     it('Test under menu Produkter', () => {
         cy.visit('https://ege-xp7test.enonic.cloud/digernes/produkter/skjaerende-verktoy');
         cy.contains('Skjærende verktøy').should('be.visible');
+        cy.visit('/produkter/holdende-verktoy');
+        cy.contains('Holdende verktøy').should('be.visible');
         
+        cy.visit('/produkter/oppspenning');
+        cy.contains('Oppspenning').should('be.visible');
+        
+        cy.visit('/produkter/maleverktoy');
+        cy.contains('Måleverktøy').should('be.visible');
+        
+        cy.visit('/prosesskontroll');
+        cy.contains('Prosesskontroll').should('be.visible');
         /* ==== Test sub meny opsjoner ==== */
         //cy.visit('/');
         //cy.visit('http://localhost:8080/admin/site/preview/default/draft/eng/Fisheries');
