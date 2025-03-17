@@ -159,9 +159,9 @@ describe('Responsivitetstester', () => {
     });
 
 
-    it('Test en iPad Pro', () => {
+    it('Test en samsung-note9', () => {
 
-        cy.viewport('ipad-pro');
+        cy.viewport('samsung-note9');
 
         cy.visit('/');
 
