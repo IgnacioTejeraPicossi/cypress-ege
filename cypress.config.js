@@ -2,9 +2,9 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl:'https://ege-xp7test.enonic.cloud/digernes',  // Test instalasjon for Digernes 
+    //baseUrl:'https://ege-xp7test.enonic.cloud/digernes',  // Test instalasjon for Digernes 
     
-    //baseUrl:'http://localhost:8080',  // Dette tilsvarer å besøke 'http://localhost:8080'
+    baseUrl:'http://localhost:8080',  // Dette tilsvarer å besøke 'http://localhost:8080'
     
     //baseUrl: 'http://localhost:8080/site/ege/master/ege', //*Not working now
     
