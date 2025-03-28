@@ -9,7 +9,7 @@ describe('Hjemmeside tester', () => {
         cy.contains('Slip & Spesialverktøy').should('be.visible');
     });
     it('Test under menu Produkter', () => {
-        cy.visit('https://ege-xp7test.enonic.cloud/digernes/produkter/skjaerende-verktoy');
+        cy.visit('/produkter/skjaerende-verktoy');
         cy.contains('Skjærende verktøy').should('be.visible');
         cy.visit('/produkter/holdende-verktoy');
         cy.contains('Holdende verktøy').should('be.visible');
@@ -17,6 +17,8 @@ describe('Hjemmeside tester', () => {
         cy.visit('/produkter/oppspenning');
         cy.contains('Oppspenning').should('be.visible');
         
+        
+        cy.visit('http://localhost:8080/produkter/maleverktoy');
         cy.visit('/produkter/maleverktoy');
         cy.contains('Måleverktøy').should('be.visible');
         
