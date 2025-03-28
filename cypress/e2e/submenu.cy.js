@@ -2,18 +2,19 @@ describe('Hjemmeside tester', () => {
       it('Test under menu Produkter', () => {
         cy.visit('/produkter');
         cy.contains('Industrielle verktøy og maskiner').should('be.visible');
-
+        cy.contains('Spørsmål om våre produkter?').should('be.visible');
+        
+                     
+        cy.visit('/');
+        cy.contains('Måleverktøy').should('be.visible');
         cy.contains('Maskiner').should('be.visible');
         cy.contains('Skjærende verktøy').should('be.visible'); 
         cy.contains('Holdende verktøy').should('be.visible');
         cy.contains('Prosesskontroll').should('be.visible'); 
         cy.contains('Oppspenning').should('be.visible');
-        cy.contains('Måleverktøy').should('be.visible');
         cy.contains('Innredning').should('be.visible');
-
-
-
         
+       
 
         /* ==== Test sub meny opsjoner ==== */
         cy.visit('http://localhost:8080/site/ege/master/ege');
